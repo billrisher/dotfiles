@@ -1,0 +1,9 @@
+(use-package ivy
+  :config
+  (setq ivy-wrap t
+	ivy-height 25
+	ivy-use-virtual-buffers t
+	ivy-count-format "(%d/%d) "
+	ivy-on-del-error-function 'ignore)
+  :init
+  (ivy-mode 1)

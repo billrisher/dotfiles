@@ -4,6 +4,11 @@ set nocompatible
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
 
+" Set cursor for urxvt in arch/manjaro
+let &t_SI = "\<esc>[5 q"
+let &t_SR = "\<esc>[5 q"
+let &t_EI = "\<esc>[2 q"
+
 " TODO: Load plugins here (pathogen or vundle)
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -11,26 +16,31 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
-
+Plugin 'jceb/vim-orgmode'
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'powerline/powerline'
 
 call vundle#end()
 filetype plugin indent on
 
+colorscheme nord
+
 " Plugin Config
-let g:airline_powerline_fonts = 1
-let g:airline_theme="onedark"
 let g:ctrlp_map = '<C-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 map <C-n> :NERDTreeToggle<CR>
 
 " Turn on syntax highlighting
+let python_highlight_all = 1
 syntax on
 
 " For plugins to load correctly
@@ -91,8 +101,8 @@ set showmode
 set showcmd
 
 " Searching
-nnoremap / /\v
-vnoremap / /\v
+" nnoremap / /\v
+" vnoremap / /\v
 set hlsearch
 set incsearch
 set ignorecase

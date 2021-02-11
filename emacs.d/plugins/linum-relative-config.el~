@@ -1,0 +1,6 @@
+(use-package linum-relative
+  :config
+  (linum-on)
+  (linum-relative-global-mode))
+
+(provide 'linum-relative-config)

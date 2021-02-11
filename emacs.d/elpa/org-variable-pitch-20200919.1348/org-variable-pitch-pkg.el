@@ -1,0 +1,2 @@
+;;; Generated package description from /home/billr/.emacs.d/elpa/org-variable-pitch-20200919.1348/org-variable-pitch.el  -*- no-byte-compile: t -*-
+(define-package "org-variable-pitch" "20200919.1348" "Minor mode for variable pitch text in org mode." '((emacs "25")) :commit "e086c59a14701cd041641b51c952fa704ee963df" :authors '(("Göktuğ Kayaalp" . "self@gkayaalp.com")) :maintainer '("Göktuğ Kayaalp" . "self@gkayaalp.com") :keywords '("faces") :url "https://dev.gkayaalp.com/elisp/index.html#ovp")

@@ -1,0 +1,5 @@
+;; Add bindings for easier window splitting
+(bind-key* "C-x \\" 'split-window-right)
+(bind-key* "C-x -" 'split-window-below)
+
+(provide 'keybinds)
