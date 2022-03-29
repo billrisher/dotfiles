@@ -1,3 +1,5 @@
+<img src="nord.jpg">
+
 # Bill's DotFiles
 
 Please enjoy `:^)`
